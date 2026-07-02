@@ -120,7 +120,7 @@ section{padding:5rem 0}
 }
 .hero-bg{
   position:absolute;inset:0;z-index:0;
-  background:linear-gradient(180deg,rgba(15,15,20,1) 0%,rgba(10,10,15,1) 100%);
+  background:#000;
   overflow:hidden;
 }
 .hero-inner{position:relative;z-index:1;width:100%;padding:4rem 0}
