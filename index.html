@@ -95,30 +95,36 @@
         <p>Every robot is the work of several subteams pulling in the same direction.</p>
       </div>
       <div class="subteams">
-        <div class="subteam manager-box" data-subteam="manager">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          <h4>Team Manager</h4>
-          <p>Coordinates team operations, schedules, and overall project management.</p>
+        <div class="subteam-row row-1">
+          <div class="subteam manager-box" data-subteam="manager">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <h4>Team Manager</h4>
+            <p>Coordinates team operations, schedules, and overall project management.</p>
+          </div>
         </div>
-        <div class="subteam" data-subteam="build">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4l-6 6 1.4 1.4 6-6a4 4 0 0 0 5.4-5.4l-2 2-1.4-1.4 2-2Z"/></svg>
-          <h4>Build &amp; Mechanical</h4>
-          <p>Designs, machines, and assembles the robot's structure and mechanisms.</p>
+        <div class="subteam-row row-2">
+          <div class="subteam" data-subteam="build">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4l-6 6 1.4 1.4 6-6a4 4 0 0 0 5.4-5.4l-2 2-1.4-1.4 2-2Z"/></svg>
+            <h4>Build &amp; Mechanical</h4>
+            <p>Designs, machines, and assembles the robot's structure and mechanisms.</p>
+          </div>
+          <div class="subteam" data-subteam="programming">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m8 6-4 6 4 6M16 6l4 6-4 6"/></svg>
+            <h4>Programming</h4>
+            <p>Writes the autonomous routines, driver controls, and vision code.</p>
+          </div>
         </div>
-        <div class="subteam" data-subteam="programming">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m8 6-4 6 4 6M16 6l4 6-4 6"/></svg>
-          <h4>Programming</h4>
-          <p>Writes the autonomous routines, driver controls, and vision code.</p>
-        </div>
-        <div class="subteam" data-subteam="cad">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 4v5"/></svg>
-          <h4>CAD &amp; Design</h4>
-          <p>Models every part in CAD so the build team can fabricate with precision.</p>
-        </div>
-        <div class="subteam" data-subteam="outreach">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
-          <h4>Outreach</h4>
-          <p>Runs demos, mentors younger teams, and grows STEM in the community.</p>
+        <div class="subteam-row row-3">
+          <div class="subteam" data-subteam="cad">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 4v5"/></svg>
+            <h4>CAD &amp; Design</h4>
+            <p>Models every part in CAD so the build team can fabricate with precision.</p>
+          </div>
+          <div class="subteam" data-subteam="outreach">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
+            <h4>Outreach</h4>
+            <p>Runs demos, mentors younger teams, and grows STEM in the community.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -236,7 +242,12 @@
             <div class="yt-video-item">
               <div class="yt-video-title">FULL GitHub guide for new FTC teams</div>
               <div class="yt-video-embed">
-                <iframe src="https://www.youtube.com/embed/a_oY5y-WnkY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe 
+                  src="https://www.youtube.com/embed/a_oY5y-WnkY?start=1" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+                </iframe>
               </div>
             </div>
           </div>
@@ -327,6 +338,7 @@
         <div class="section-head">
           <span class="eyebrow">Partner with us</span>
           <h2>Sponsor Boltic</h2>
+          <p>Boltic runs entirely on community support, and every contribution goes directly into the hands of students building real engineering skills. By sponsoring us, you're investing in the next generation of engineers, programmers, and problem-solvers — students who design and machine their own robot from scratch, compete against teams across the region, and give back through outreach. Your support helps cover parts, tools, and registration fees, and in return your brand appears on our robot, shirts, and banner at every event we attend. If you believe in STEM education and want to make a tangible local impact, we'd love to have you in our corner.</p>
           <p>Boltic runs entirely on community support, and every contribution goes directly into the hands of students building real engineering skills. By sponsoring us, you're investing in the next generation of engineers, programmers, and problem-solvers — students who design and machine their own robot from scratch, compete against teams across the region, and give back through outreach. Your support helps cover parts, tools, and registration fees, and in return your brand appears on our robot, shirts, and banner at every event we attend. If you believe in STEM education and want to make a tangible local impact, we'd love to have you in our corner.</p>
         </div>
       </div>
@@ -539,41 +551,43 @@
     build: { 
       name: 'Build & Mechanical', 
       members: [
-        { name: 'Pratyush', headshot: null, bio: '' },
-        { name: 'Akhil', headshot: null, bio: '' },
-        { name: 'Advaith', headshot: null, bio: '' },
-        { name: 'Suhith', headshot: null, bio: '' },
-        { name: 'Mehdi', headshot: null, bio: '' },
-        { name: 'Pritika', headshot: null, bio: '' }
+        { name: 'Pratyush', headshot: 'assets/img/Pratyush.png', bio: '' },
+        { name: 'Akhil', headshot: 'assets/img/Akhil', bio: '' },
+        { name: 'Advaith', headshot: 'assets/img/Advaith', bio: '' },
+        { name: 'Suhith', headshot: 'assets/img/Suhith.jpeg', bio: '' },
+        { name: 'Mehdi', headshot: null, bio: '' }
       ]
     },
     manager: { 
       name: 'Team Manager', 
       members: [
-        { name: 'Himang', headshot: null, bio: '' }
+        { name: 'Himang', headshot: 'assets/img/Himang.png', bio: '' }
       ]
     },
     programming: { 
       name: 'Programming', 
       members: [
-        { name: 'Anish', headshot: null, bio: '' },
-        { name: 'Arav', headshot: null, bio: '' },
-        { name: 'Hemanth', headshot: null, bio: '' }
+        { name: 'Anish', headshot: 'assets/img/Anish', bio: '' },
+        { name: 'Arav', headshot: 'assets/img/Arav', bio: '' },
+        { name: 'Hemanth', headshot: 'assets/img/Hemanth.jpeg', bio: '' }
       ]
     },
     cad: { 
       name: 'CAD & Design', 
       members: [
-        { name: 'Akhil', headshot: null, bio: '' },
-        { name: 'Suhith', headshot: null, bio: '' }
+        { name: 'Akhil', headshot: 'assets/img/Akhil', bio: '' },
+        { name: 'Suhith', headshot: 'assets/img/Suhith.jpeg', bio: '' },
+        { name: 'Mehdi', headshot: null, bio: '' },
+        { name: 'Pratyush', headshot: 'assets/img/Pratyush.png', bio: '' },
+        { name: 'Advaith', headshot: 'assets/img/Advaith', bio: '' }
       ]
     },
     outreach: { 
       name: 'Outreach', 
       members: [
-        { name: 'Pritika', headshot: null, bio: '' },
-        { name: 'Himang', headshot: null, bio: '' },
-        { name: 'Ayaan', headshot: null, bio: '' }
+        { name: 'Pritika', headshot: 'assets/img/Pritika', bio: '' },
+        { name: 'Himang', headshot: 'assets/img/Himang.png', bio: '' },
+        { name: 'Ayaan', headshot: 'assets/img/Ayaan.jpeg', bio: '' }
       ]
     },
   };
@@ -591,9 +605,10 @@
       data.members.forEach(member => {
         const card = document.createElement('div');
         card.className = 'member-card';
+        const adjustClass = (member.name === 'Advaith' || member.name === 'Pritika') ? 'adjust-top' : '';
         card.innerHTML = `
           <div class="member-headshot">
-            ${member.headshot ? `<img src="${member.headshot}" alt="${member.name}">` : '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>'}
+            ${member.headshot ? `<img src="${member.headshot}" alt="${member.name}" class="${adjustClass}">` : '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>'}
           </div>
           <div class="member-name">${member.name}</div>
           ${member.bio ? `<div class="member-bio">${member.bio}</div>` : ''}
