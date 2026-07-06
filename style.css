@@ -179,6 +179,39 @@ section{padding:5rem 0}
   letter-spacing:.14em;text-transform:uppercase;
 }
 
+/* sponsors section */
+.sponsors-section{margin-top:3rem}
+.sponsors-section .section-head{margin-bottom:2rem}
+.sponsors-section h3{
+  font-family:'Archivo',sans-serif;font-weight:900;
+  font-size:clamp(1.5rem,3vw,2.2rem);line-height:.98;
+  text-transform:uppercase;letter-spacing:-.01em;margin-top:.8rem;
+}
+.sponsors-container{
+  position:relative;
+  width:100%;
+  height:400px;
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:8px;
+  overflow:hidden;
+}
+.sponsor-logo{
+  position:absolute;
+  display:flex;align-items:center;justify-content:center;
+  padding:1rem;
+  animation:float 15s infinite ease-in-out;
+}
+.sponsor-logo img{
+  max-width:100%;max-height:180px;object-fit:contain;
+}
+@keyframes float{
+  0%,100%{transform:translate(10%,10%)}
+  25%{transform:translate(80%,20%)}
+  50%{transform:translate(70%,80%)}
+  75%{transform:translate(20%,70%)}
+}
+
 /* gallery */
 .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
 .gallery .ph{aspect-ratio:4/3;min-height:0;overflow:hidden}
@@ -298,6 +331,7 @@ footer{
   .hero-inner{flex-direction:column}
   .hero-logo{margin-top:2rem}
   .wrap{padding:0 1rem}
+  .sponsors-grid{grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:1.5rem}
 }
 @media(max-width:720px){
   .links{
@@ -324,6 +358,7 @@ footer{
 @media(max-width:520px){
   .card-grid,.gallery,.sponsor-grid{grid-template-columns:1fr}
   .hero-logo img{max-height:250px}
+  .sponsors-grid{grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:1rem}
 }
 @media(prefers-reduced-motion:reduce){
   *{animation:none!important;scroll-behavior:auto!important}
